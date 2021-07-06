@@ -35,15 +35,15 @@ Object detection research has attracted great interest in recent years, with mod
 
 ## 2. License Plate Detection Benchmarks <a name="2"></a>
 
-| name       | \#images               | \#instances               | \#LP instances/Image  | \#ST instances/Image     | \#Variations in tilt degrees. |
-| :--------- | :--------------------: | :-----------------------: | :-------------------: | :----------------------: | :---------------------------: |
-| AOLP       |         2,049          |          2,049            |        1              |         1                |                   ✓           |
-| SSIG       |         2,000          |          8,683            |        4.34           |         4.34             | ✗ |
-| PKU        |         3,977          |          4,389            |        1.10           |         1.10             | ✗ |
-| UFPR       |         4,500          |          4,500            |        1              |         1                | ✗ | 
-| CD-HARD    |         102            |          102              |        1              |         1                | ✓ | 
-| CCPD       |         250K           |          250K             |        1              |         1                | ✓ |
-| **LPST-110K  |         9,795        |          110K             |        **5.21         |         **11             | ✓ |
+| name       | \#images               | \#instances               | \#LP instances/Image  | \#ST instances/Image     | \#Variations in tilt degrees. | \#Variations in distance. |  \#Variations in blur. |
+| :--------- | :--------------------: | :-----------------------: | :-------------------: | :----------------------: | :---------------------------: | :---------------------------: | :---------------------------: |
+| AOLP       |         2,049          |          2,049            |        1              |         1                | ✓ | ✗ | ✓ |
+| SSIG       |         2,000          |          8,683            |        4.34           |         4.34             | ✗ | ✓ | ✗ |
+| PKU        |         3,977          |          4,389            |        1.10           |         1.10             | ✗ | ✗ | ✗ |
+| UFPR       |         4,500          |          4,500            |        1              |         1                | ✗ | ✓ | ✓ |
+| CD-HARD    |         102            |          102              |        1              |         1                | ✓ | ✓ | ✗ |
+| CCPD       |         250K           |          250K             |        1              |         1                | ✓ | ✓ | ✓ |
+| **LPST-110K**  |         9,795        |          110K             |        **5.21**         |         **11**       | ✓ | ✓ | ✓ |
  
 #### 2.1 LPST-110K <a name="2.1"></a>
 * training & validation set:

@@ -15,8 +15,8 @@ This is the official website for "License Plate Detection via Information Maximi
 0. [Abstract](#0)
 1. [Introduction](#1)  
 2. [License Plate Detection Benchmarks](#2)  
-   2.1 [TJU-DHD-traffic](#2.1)  
-   2.2 [TJU-DHD-campus](#2.2)   
+   2.1 [LPST-110K Sample](#2.1)  
+   2.2 [Full dataset](#2.2)   
 4. [Benchmark](#4)  
    4.1 [TJU-DHD-traffic](#4.1)  
    4.2 [TJU-DHD-campus](#4.2)   
@@ -45,29 +45,31 @@ Object detection research has attracted great interest in recent years, with mod
 | CCPD       |         250K           |          250K             |        1              |         1                | ✓ | ✓ | ✓ |
 | **LPST-110K**  |         9,795        |          110K             |        **5.21**         |         **11**       | ✓ | ✓ | ✓ |
  
-#### 2.1 LPST-110K <a name="2.1"></a>
-* training & validation set:
+#### 2.1 LPST-110K Sample <a name="2.1"></a>
+* SAMPLE 001 set:
     * images:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/ERPTtJ9Qf3hHnKn9JQc9_y0B5uaq6qXjnF4U--2wiSTjRw?e=aarX3v)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1eLxfl19LVLy9k-DrqTOYvg)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_traffic_trainval_images.zip)
+      [Google Drive](https://drive.google.com/file/d/1gCy0k7afMqYMuTjo4Vna2P_IfLLeRTdI/view?usp=sharing)
     * annotations:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EY0m5aX84EJFnquyCE8KSp8BiZKTlNHySbdJ0QG-nE2XTQ?e=Abpvgz)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1xFhMwQgpqk1QILwXS_dR2g)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_traffic_trainval_annos.zip)
-* test set:
+      [Google Drive, full annotations](https://drive.google.com/file/d/1pmgP4ccrAGwRPfCDnJHG16Q72euH6nd8/view?usp=sharing)
+      [Google Drive, license plate annotations](https://drive.google.com/file/d/19o-4xX6Pk9y0QUK0CWuJso1vQF4Y33Nl/view?usp=sharing)
+      [Google Drive, scene text annotations](https://drive.google.com/file/d/19XVGtJXvRGqjij-w5kR4oVNNyWcgQ5c3/view?usp=sharing)
+    * full images:
+      [Google Drive](https://drive.google.com/file/d/16XAH_uDH-wmGMKVWdni2vSXU8zSTk6dL/view?usp=sharing)
+      
+* SAMPLE 001 set:
     * images:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EbkVOGVzsoRIhR6u73iAv44BN3n9geqp3R-eTJeZCJen-w?e=az00He)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1b1iR8eujY28qm-pH8rHV-A)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_traffic_test_images.zip)
-    * imageinfo:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EfuzQvR7qrhAi8oDMy5PheUBvxSL539oua1kD6g130DChg?e=yOhBGM)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1Np079urN0uQmybBM4RriZA)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_traffic_test_imageinfo.zip)
+      [Google Drive](https://drive.google.com/file/d/1gCy0k7afMqYMuTjo4Vna2P_IfLLeRTdI/view?usp=sharing)
+    * annotations:
+      [Google Drive, full annotations](https://drive.google.com/file/d/1pmgP4ccrAGwRPfCDnJHG16Q72euH6nd8/view?usp=sharing)
+      [Google Drive, license plate annotations](https://drive.google.com/file/d/19o-4xX6Pk9y0QUK0CWuJso1vQF4Y33Nl/view?usp=sharing)
+      [Google Drive, scene text annotations](https://drive.google.com/file/d/19XVGtJXvRGqjij-w5kR4oVNNyWcgQ5c3/view?usp=sharing)
+    * full images:
+      [Google Drive](https://drive.google.com/file/d/16XAH_uDH-wmGMKVWdni2vSXU8zSTk6dL/view?usp=sharing)
+      
 * evaluation tools:
   [cocoapi](https://github.com/cocodataset/cocoapi)
 
-#### 2.2 TJU-DHD-campus <a name="2.2"></a>
+#### 2.2 Full dataset <a name="2.2"></a>
 (The training imageset is too large, thus is ziped as a 4-part archive.
 One should download all of them and open the `.zip.001` using your favorite zip file extractor.)
 * training & validation set:

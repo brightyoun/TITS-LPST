@@ -205,8 +205,15 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
 
 #### 4.1 Ablation Study <a name="3.1"></a>
 
-* Results on AOLP
+* Ablation Study
 ![Examples of DHD](imgs/tits-006.jpg)
+
+* Results on Various Benchmarks
+![Examples of DHD](imgs/eccv20_fig05.png)
+
+* Results on LTSP-110K
+![Examples of DHD](imgs/supp_002.png)
+![Examples of DHD](imgs/supp_003.png)
 
 ## 5. Citation <a name="5"></a>
 

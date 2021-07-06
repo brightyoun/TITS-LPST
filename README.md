@@ -46,6 +46,15 @@ Object detection research has attracted great interest in recent years, with mod
 | CCPD       |         250K           |          250K             |        1              |         1                | ✓ | ✓ | ✓ |
 | **LPST-110K**  |         9,795        |          110K             |        **5.21**         |         **11**       | ✓ | ✓ | ✓ |
  
+### Annotations format
+The CSV file with annotations should contain one annotation per line.
+Images with multiple bounding boxes should use one row per bounding box.
+Note that indexing for pixel values starts at 0.
+The expected format of each line is:
+```
+path,x1,y1,x2,y2,class_name
+```
+
 #### 2.1 LPST-110K Sample <a name="2.1"></a>
 * SAMPLE 001 set:
     * images:
@@ -59,17 +68,35 @@ Object detection research has attracted great interest in recent years, with mod
     * full images:
       [Google Drive](https://drive.google.com/file/d/16XAH_uDH-wmGMKVWdni2vSXU8zSTk6dL/view?usp=sharing)
       
-* SAMPLE 001 set:
+* SAMPLE 002 set:
     * images:
-      [Google Drive](https://drive.google.com/file/d/1gCy0k7afMqYMuTjo4Vna2P_IfLLeRTdI/view?usp=sharing)
+      [Google Drive](https://drive.google.com/file/d/1iLFhmBT2JMK4ZKZZv8IK7wTa-Xnza5I8/view?usp=sharing)
     * full annotations:
-      [Google Drive](https://drive.google.com/file/d/1pmgP4ccrAGwRPfCDnJHG16Q72euH6nd8/view?usp=sharing)
+      [Google Drive](https://drive.google.com/file/d/1yHOXeFY3WCasgtgXYQHGKL68Qw429IgY/view?usp=sharing)
     * license plate annotations:
-      [Google Drive](https://drive.google.com/file/d/19o-4xX6Pk9y0QUK0CWuJso1vQF4Y33Nl/view?usp=sharing)
+      [Google Drive](https://drive.google.com/file/d/1JERu9Dy2YSQONV-xiR5kTD36AJA3bQ16/view?usp=sharing)
     * scene text annotations:
-      [Google Drive](https://drive.google.com/file/d/19XVGtJXvRGqjij-w5kR4oVNNyWcgQ5c3/view?usp=sharing)
-    * full images:
-      [Google Drive](https://drive.google.com/file/d/16XAH_uDH-wmGMKVWdni2vSXU8zSTk6dL/view?usp=sharing)
+      [Google Drive](https://drive.google.com/file/d/1jlqKL5_4wOctYCS0X6rvm_df1ysndKCO/view?usp=sharing)
+      
+* SAMPLE 003 set:
+    * images:
+      [Google Drive](https://drive.google.com/file/d/1VFTH3uzcQMPyl9uCj5ScLVCWFAxyLyL7/view?usp=sharing)
+    * full annotations:
+      [Google Drive](https://drive.google.com/file/d/1XnXWa3NR5bjwO_cq5Gf2xLivpLUQ0fHI/view?usp=sharing)
+    * license plate annotations:
+      [Google Drive](https://drive.google.com/file/d/1qMIt3gBH5kDDER7OY1cKCtwY9A1JhBcS/view?usp=sharing)
+    * scene text annotations:
+      [Google Drive](https://drive.google.com/file/d/1RwKYCxylV4t7LJXBJplzzGfrAhfCENHi/view?usp=sharing)
+      
+ * SAMPLE 004 set:
+    * images:
+      [Google Drive](https://drive.google.com/file/d/1iLFhmBT2JMK4ZKZZv8IK7wTa-Xnza5I8/view?usp=sharing)
+    * full annotations:
+      [Google Drive](https://drive.google.com/file/d/1yHOXeFY3WCasgtgXYQHGKL68Qw429IgY/view?usp=sharing)
+    * license plate annotations:
+      [Google Drive](https://drive.google.com/file/d/1JERu9Dy2YSQONV-xiR5kTD36AJA3bQ16/view?usp=sharing)
+    * scene text annotations:
+      [Google Drive](https://drive.google.com/file/d/1jlqKL5_4wOctYCS0X6rvm_df1ysndKCO/view?usp=sharing)
       
 * evaluation tools:
   [cocoapi](https://github.com/cocodataset/cocoapi)

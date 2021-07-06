@@ -1,5 +1,7 @@
 # License Plate Detection via Information Maximization (TITS-LPST)
 
+![Examples of DHD](imgs/tits-002.jpg)
+
 This is the official website for "License Plate Detection via Information Maximization (submitted to T-ITS 2020)", which is a newly built real-world dataset for license plate detection and scene text detection.
 - 9.7k+ images and 110k+ instances
 - Scenes: **traffic** and **drone**, Tasks: **license plate detection** and **scene text (excluding license plate) detection**

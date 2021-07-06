@@ -18,10 +18,10 @@ This is the official website for "License Plate Detection via Information Maximi
 2. [License Plate Detection Benchmarks](#2)  
    2.1 [LPST-110K Sample](#2.1)  
    2.2 [Full dataset](#2.2)   
-3. [Benchmark](#4)  
-   3.1 [TJU-DHD-traffic](#4.1)  
-   4.2 [TJU-DHD-campus](#4.2)   
-   4.3 [TJU-DHD-pedestrian](#4.3) 
+3. [Benchmark](#3)  
+   3.1 [AOLP Dataset](#3.1)  
+   3.2 [PKU Dataset](#3.2)   
+   3.3 [UFPR Dataset](#3.3) 
 5. [Citation](#5)  
 6. [Evaluation on the test set](#6) 
 7. [Contact](#7) 
@@ -109,12 +109,11 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
 
 ## 3. License Plate Detection Results on Benchmarks <a name="4"></a>
 
-#### 3.1 AOLP Dataset <a name="4.1"></a>
+#### 3.1 AOLP Dataset <a name="3.1"></a>
 
 * Results on AOLP
 
   |              | :AOLP         |           |              |           |              |           : |
-  | :----------- :|||||||
   | method       | AC Precision | AC Recall | LE Precision | LE Recall | RP Precision | RP Recall  |
   | :----------- | :----------: | :-------: | :----------: | :-------: | :----------: | :--------: |
   | Hsu          | 91.00        |  96.00    | 91.00        |  95.00    |  91.00       | 94.00      |
@@ -127,27 +126,26 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   | Selmi        | 99.30        |  99.40    | 99.20        |  99.20    |  98.90       | 98.80      |
   | **Ours**     | **99.71**        |  **99.80**    | **99.80**        |  **99.32**    |  **99.71**       | **98.79**      |
   
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
 
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
+#### 3.2 PKU Dataset <a name="3.2"></a>
 
-#### 4.2 TJU-DHD-campus <a name="4.2"></a>
+* Results on validation (Accuracy)
 
-* Results on validation
+  | method                 | G1        | G2        |  G3       | G4        | G5        | Average   |
+  | :--------------------- | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+  | RetinaNet (Baseline)   | 96.67     | 97.29     | 96.77     | 96.68     | 95.34     | 96.34     |
+  | Zheng                  | 94.93     | 95.71     | 91.91     | 69.58     | 67.61     | 79.47     |
+  | Zhao                   | 95.18     | 95.71     | 95.13     | 69.93     | 68.10     | 80.29     |
+  | Zhou                   | 95.43     | 97.85     | 94.21     | 81.21     | 82.37     | 90.22     |
+  | Li                     | 98.89     | 98.42     | 95.83     | 81.17     | 83.31     | 91.52     |
+  | Yuan                   | 98.76     | 98.42     | 97.72     | 96.23     | 97.32     | 97.69     |
+  | Li                     | **99.88** | **99.86** | 99.60     | **100.0** | 99.31     | 99.73     |
+  | Bjorklund              | 98.77     | 99.00     | 98.92     | 97.74     | -         | 98.61     |
+  | Selmi                  | 99.50     | 99.40     | 99.40     | 99.60     | 99.10     | 99.40     |
+  | **Ours**               | **99.88** | **99.86** | **99.87** | 99.65     | **99.58** | **99.74** |
+  
 
-  | method       | backbone | input size |  AP   | AP@0.5 | AP@0.75 | AP_t  | AP_s  | AP_l  | AP_l  |
-  | :----------- | :------: | :--------: | :---: | :----: | :-----: | :---: | :---: | :---: | :---: |
-  | RetinaNet    | ResNet50 |  1333x800  | 48.4  |  79.3  |  52.4   |  4.7  | 27.3  | 56.2  | 73.8  |
-  | FCOS         | ResNet50 |  1333x800  | 49.3  |  73.8  |  53.8   |  5.6  | 29.6  | 55.9  | 74.3  |
-  | FPN          | ResNet50 |  1333x800  | 52.4  |  77.5  |  58.4   |  8.5  | 37.4  | 58.6  | 74.9  |
-  | Cascade RCNN | ResNet50 |  1333x800  | 55.1  |  77.6  |  60.9   | 10.8  | 40.1  | 61.2  | 78.8  |
-
-#### 4.3 TJU-DHD-pedestrian <a name="4.3"></a>
+#### 3.3 UFPR Dataset <a name="3.3"></a>
 
 * Miss rate with same-scene evaluation
 

@@ -21,7 +21,9 @@ This is the official website for "License Plate Detection via Information Maximi
 3. [Benchmark](#3)  
    3.1 [AOLP Dataset](#3.1)  
    3.2 [PKU Dataset](#3.2)   
-   3.3 [UFPR Dataset](#3.3) 
+   3.3 [UFPR Dataset](#3.3)  
+   3.4 [CCPD Dataset](#3.4)  
+   3.5 [LTSP-110K Dataset](#3.5) 
 5. [Citation](#5)  
 6. [Evaluation on the test set](#6) 
 7. [Contact](#7) 
@@ -147,17 +149,43 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
 
 #### 3.3 UFPR Dataset <a name="3.3"></a>
 
-* Miss rate with same-scene evaluation
+* Results on validation (Recall)
 
-  | method |  R/RS/HO/R+HO/A (TJU-Ped-campus)  | R/RS/HO/R+HO/A (TJU-Ped-traffic)  |
-  | :----- | :---------------------------: | :---------------------------: |
-  | FPN    | 27.92/73.14/67.52/35.67/38.08 | 22.30/35.19/60.30/26.71/37.78 |
+  | method               | UFPR  |
+  | :------------------- | :---: | 
+  | RetinaNet (Baseline) | 97.22 | 
+  | Laroca               | 98.33 | 
+  | Laroca | 98.67 | 
+  | **Ours** | **99.17** | 
 
-* Miss rate with cross-scene evaluation
+#### 3.4 CCPD Dataset <a name="3.4"></a>
 
-  | method | R/R+HO (TJU-Ped-campus -> traffic) | R/R+HO (TJU-Ped-traffic -> campus) |
-  | :----- | :-----------------------------------------: | :---------------------------------------------: |
-  | FPN    |              30.62 / 33.89               |               42.08 / 50.55               |
+* Results on validation (Precision)
+
+  | method               | UFPR  |
+  | :------------------- | :---: | 
+  | RetinaNet (Baseline) | 94.10 | 
+  | Faster R-CNN         | 92.90 | 
+  | SSD300               | 94.40 |  
+  | YOLO9000             | 93.10 |  
+  | Wang                 | 47.20 |  
+  | Li                   | 94.20 |  
+  | Xu                   | 94.50 | 
+  | **Ours**             | **96.10** | 
+
+#### 3.5 LTSP-110K Dataset <a name="3.5"></a>
+
+* LP Detection Results on validation (AP)
+
+  | method               | AP       | AP^{.75}       |
+  | :------------------- | :------: | :------: | 
+  | Faster R-CNN         | .781     | .578     | 
+  | SSD300               | .740     | .639     |
+  | YOLO9000             | .729     | .625     |
+  | RetinaNet (Baseline) | .863     | .769     |
+  | + IF loss            | .905     | .885     |
+  | + GRL                | .906     | .890     |
+  | + LRM (**Ours**)     | **.911** | **.915** |
 
 ## 5. Citation <a name="5"></a>
 

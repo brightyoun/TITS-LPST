@@ -49,8 +49,8 @@ Object detection research has attracted great interest in recent years, with mod
 * SAMPLE 001 set:
     * images:
       [Google Drive](https://drive.google.com/file/d/1gCy0k7afMqYMuTjo4Vna2P_IfLLeRTdI/view?usp=sharing)
-    * annotations:
-      [Google Drive, full annotations](https://drive.google.com/file/d/1pmgP4ccrAGwRPfCDnJHG16Q72euH6nd8/view?usp=sharing)
+    * full annotations:
+      [Google Drive](https://drive.google.com/file/d/1pmgP4ccrAGwRPfCDnJHG16Q72euH6nd8/view?usp=sharing)
     * license plate annotations:
       [Google Drive](https://drive.google.com/file/d/19o-4xX6Pk9y0QUK0CWuJso1vQF4Y33Nl/view?usp=sharing)
     * scene text annotations:
@@ -61,8 +61,8 @@ Object detection research has attracted great interest in recent years, with mod
 * SAMPLE 001 set:
     * images:
       [Google Drive](https://drive.google.com/file/d/1gCy0k7afMqYMuTjo4Vna2P_IfLLeRTdI/view?usp=sharing)
-    * annotations:
-      [Google Drive, full annotations](https://drive.google.com/file/d/1pmgP4ccrAGwRPfCDnJHG16Q72euH6nd8/view?usp=sharing)
+    * full annotations:
+      [Google Drive](https://drive.google.com/file/d/1pmgP4ccrAGwRPfCDnJHG16Q72euH6nd8/view?usp=sharing)
     * license plate annotations:
       [Google Drive](https://drive.google.com/file/d/19o-4xX6Pk9y0QUK0CWuJso1vQF4Y33Nl/view?usp=sharing)
     * scene text annotations:

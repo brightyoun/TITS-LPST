@@ -18,8 +18,8 @@ This is the official website for "License Plate Detection via Information Maximi
 2. [License Plate Detection Benchmarks](#2)  
    2.1 [LPST-110K Sample](#2.1)  
    2.2 [Full dataset](#2.2)   
-4. [Benchmark](#4)  
-   4.1 [TJU-DHD-traffic](#4.1)  
+3. [Benchmark](#4)  
+   3.1 [TJU-DHD-traffic](#4.1)  
    4.2 [TJU-DHD-campus](#4.2)   
    4.3 [TJU-DHD-pedestrian](#4.3) 
 5. [Citation](#5)  
@@ -107,23 +107,24 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   [cocoapi](https://github.com/cocodataset/cocoapi)
 
 
-## 3. Detection Results <a name="4"></a>
+## 3. License Plate Detection Results on Benchmarks <a name="4"></a>
 
-#### 3.1 TJU-DHD-traffic <a name="4.1"></a>
+#### 3.1 AOLP Dataset <a name="4.1"></a>
 
 * Results on AOLP
 
+  | Dataset subset| AOLP  |
   | method       | AC Precision | AC Recall | LE Precision | LE Recall | RP Precision | RP Recall  |
   | :----------- | :----------: | :-------: | :----------: | :-------: | :----------: | :--------: |
-  | Hsu          | 91           |  96       | 91           |  95       |  91          | 94         |
+  | Hsu          | 91.00        |  96.00    | 91.00        |  95.00    |  91.00       | 94.00      |
   | Li           | 98.53        |  98.38    | 97.75        |  97.62    |  95.28       | 95.58      |
-  | Selmi        | 92.6         |  96.8     | 93.5         |  93.3     |  92.9        | 96.2       |
+  | Selmi        | 92.60        |  96.80    | 93.50        |  93.30    |  92.90       | 96.20      |
   | Rafique      | -            |  98.09    | -            |  93.92    |  -           | 89.03      |
-  | Xie          | 99.51        |  98.09    | -            |  93.92    |  -           | 89.03      |
-  | Li           | -            |  98.09    | -            |  93.92    |  -           | 89.03      |
-  | Bjorklund    | 100          |  98.09    | -            |  93.92    |  -           | 89.03      |
-  | Selmi        | 99.3         |  98.09    | -            |  93.92    |  -           | 89.03      |
-  | **Ours**     | 99.71        |  98.09    | -            |  93.92    |  -           | 89.03      |
+  | Xie          | 99.51        |  99.51    | 99.43        |  **99.43**    |  99.46       | 99.46      |
+  | Li           | -            |  99.12    | -            |  99.08    |  -           | 98.20      |
+  | Bjorklund    | **100**          |  99.30    | **99.80**        |  99.00    |  **99.80**       | **99.00**      |
+  | Selmi        | 99.30        |  99.40    | 99.20        |  99.20    |  98.90       | 98.80      |
+  | **Ours**     | **99.71**        |  **99.80**    | **99.80**        |  **99.32**    |  **99.71**       | **98.79**      |
   
 
 #### 4.2 TJU-DHD-campus <a name="4.2"></a>

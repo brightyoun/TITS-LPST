@@ -8,6 +8,7 @@ This is the official website for "License Plate Detection via Information Maximi
 - **Variations in blur**: Blurry image due to motion blur and hand jitter while capturing images.
 - If you are interested in license plate detection, please refer to [our paper] or [our github project](https://github.com/brightyoun/TITS-LPST).
 
+![Examples of DHD](imgs/tits-007.jpg)
 
 #### Younkwan Lee, Jihyo Jeon, Yeongmin Ko, Moongu Jeon, Witold Pedrycz
 

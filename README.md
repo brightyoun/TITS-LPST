@@ -1,6 +1,13 @@
 # License Plate Detection via Information Maximization (TITS-LPST)
 
-If you need LPST-110K dataset, send email: (brightyoun@gist.ac.kr)
+This is the official website for "License Plate Detection via Information Maximization (submitted to T-ITS 2020)", which is a newly built real-world dataset for license plate detection and scene text detection.
+- 9.7k+ images and 110k+ instances
+- Scenes: **traffic** and **drone**, Tasks: **license plate detection** and **scene text (excluding license plate) detection**
+- **Variations in tilt degrees**: Horizontal tilt degree (15 ~ 45 degrees) and vertical tilt degree (15 ~ 45 degrees).
+- **Variations in distance**: The distance from the license plate to the camera location is relatively diverse.
+- **Variations in blur**: Blurry image due to motion blur and hand jitter while capturing images.
+- If you are interested in license plate detection, please refer to [our paper] or [our github project](https://github.com/brightyoun/TITS-LPST).
+
 
 #### Younkwan Lee, Jihyo Jeon, Yeongmin Ko, Moongu Jeon, Witold Pedrycz
 

@@ -212,8 +212,9 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
 ![Examples of DHD](imgs/eccv20_fig05.png)
 
 * Results on LTSP-110K
-<p align='center'><img src='/imgs/001.gif' height="400px"/></p>
+<p align='left'><img src='/imgs/001.gif' height="400px"/></p>
 <p align='center'><img src='/imgs/002.gif' height="400px"/></p>
+<p align='right'><img src='/imgs/003.gif' height="400px"/></p>
 ![Examples of DHD](imgs/supp_002.png)
 ![Examples of DHD](imgs/supp_003.png)
 

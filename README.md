@@ -102,58 +102,29 @@ path,x1,y1,x2,y2,class_name
   [cocoapi](https://github.com/cocodataset/cocoapi)
 
 #### 2.2 Full dataset <a name="2.2"></a>
-(The training imageset is too large, thus is ziped as a 4-part archive.
-One should download all of them and open the `.zip.001` using your favorite zip file extractor.)
-* training & validation set:
-    * training images-1:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EQOf_tTaDz9AtGBA7xXZdMYBmGgEN3wI6pYxdj_sqU9RaA?e=IAa4z4)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1aar9GAbityEBMMEnXEwbOA)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_train_images.zip.001)
-    * training images-2:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EYdb15b5s3hOm_2EWc_uLn8BtpzXnpZJLVRIH6HdbXfbVw?e=hHJNon)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1xWDiok5DTVT8HEMK09DPiA)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_train_images.zip.002)
-    * training images-3:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EatVjZJ4uJZGm3OOvdbjheMB6dIOlDumkbhVSMqNZFjSDQ?e=5a9C63)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1gUQs6XdUU7fczaydtLPBSg)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_train_images.zip.003)
-    * training images-4:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/ERJGIKSOjrVGodjyAtYWOBIBz7Yn3EGGjmtMRDpG9eFlHQ?e=x8MASb)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1PncIpCpS_En9Ka0aD6-_lA)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_train_images.zip.004)
-    * validation images:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EUHmv-SilRtPlKVuV7TTYlUB24CVeAi9HPto9ZJ6m61kpA?e=aREmy0)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1WgbIEXIbGHjh6jBjh_l37A)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_val_images.zip)
-    * annotations:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EfJ_SbAK2itJk8kyLBF9ER8BqO0faVumeWn8rPYMkGpqNw?e=Ckc2jn)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1JKnGky_Qzk3QluURgFxCBQ)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_trainval_annos.zip)
-* test set:
-    * images:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EZZe-4Atw8tEkPdTToNXEboBtdORbKqz2j6asah_hgUgAA?e=ABQibv)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1I33BMKvU9WP_nC64wM1hHw)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_test_images.zip)
-    * imageinfo:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EQJpKUI5UUxBuM6ZQGLCLNwBEfGX0tgBR_JyZhAyRp4YYw?e=f6Zrxz)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1LmJRobdmYoqWv1NAqwKcsg)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_test_imageinfo.zip)
+To see full dataset, here's the Email and request Dataset [contact us](brightyoun@gist.ac.kr).
 * evaluation tools:
   [cocoapi](https://github.com/cocodataset/cocoapi)
 
 
-## 4. Benchmark <a name="4"></a>
+## 3. Detection Results <a name="4"></a>
 
-#### 4.1 TJU-DHD-traffic <a name="4.1"></a>
+#### 3.1 TJU-DHD-traffic <a name="4.1"></a>
 
-* Results on validation
+* Results on AOLP
 
-  | method       | backbone | input size |  AP   | AP@0.5 | AP@0.75 | AP_s  | AP_m  | AP_l  |
-  | :----------- | :------: | :--------: | :---: | :----: | :-----: | :---: | :---: | :---: |
-  | RetinaNet    | ResNet50 |  1333x800  | 53.5  |  80.9  |  60.0   | 24.0  | 50.5  | 68.0  |
-  | FCOS         | ResNet50 |  1333x800  | 53.8  |  80.0  |  60.1   | 24.6  | 50.6  | 68.8  |
-  | FPN          | ResNet50 |  1333x800  | 55.4  |  83.4  |  63.0   | 30.4  | 52.2  | 68.2  |
-  | Cascade RCNN | ResNet50 |  1333x800  | 57.9  |  82.7  |  66.6   | 32.6  | 54.4  | 71.4  |
+  | method       | AC Precision | AC Recall | LE Precision | LE Recall | RP Precision | RP Recall  |
+  | :----------- | :----------: | :-------: | :----------: | :-------: | :----------: | :--------: |
+  | Hsu          | 91           |  96       | 91           |  95       |  91          | 94         |
+  | Li           | 98.53        |  98.38    | 97.75        |  97.62    |  95.28       | 95.58      |
+  | Selmi        | 92.6         |  96.8     | 93.5         |  93.3     |  92.9        | 96.2       |
+  | Rafique      | -            |  98.09    | -            |  93.92    |  -           | 89.03      |
+  | Xie          | 99.51        |  98.09    | -            |  93.92    |  -           | 89.03      |
+  | Li           | -            |  98.09    | -            |  93.92    |  -           | 89.03      |
+  | Bjorklund    | 100          |  98.09    | -            |  93.92    |  -           | 89.03      |
+  | Selmi        | 99.3         |  98.09    | -            |  93.92    |  -           | 89.03      |
+  | **Ours**     | 99.71        |  98.09    | -            |  93.92    |  -           | 89.03      |
+  
 
 #### 4.2 TJU-DHD-campus <a name="4.2"></a>
 

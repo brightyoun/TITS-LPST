@@ -43,7 +43,7 @@ Object detection research has attracted great interest in recent years, with mod
 | UFPR       |         4,500          |          4,500            |        1              |         377,708          |
 | CD-HARD    |         102            |          102              |        1              |         377,708          |
 | CCPD       |         250K           |          250K             |        1              |         377,708          |
-| LPST-110K  |         9,795          |          110K             |        5.21           |         377,708          |
+| \#LPST-110K  |         9,795          |          110K             |        5.21           |         377,708          |
 
 #### 2.1 TJU-DHD-traffic <a name="2.1"></a>
 * training & validation set:

@@ -14,12 +14,9 @@ This is the official website for "License Plate Detection via Information Maximi
 ## Table of Contents
 0. [Abstract](#0)
 1. [Introduction](#1)  
-2. [Object detection dataset](#2)  
+2. [License Plate Detection Dataset](#2)  
    2.1 [TJU-DHD-traffic](#2.1)  
    2.2 [TJU-DHD-campus](#2.2)   
-3. [Pedestrian detection dataset](#3)  
-   3.1 [TJU-Ped-traffic](#3.1)  
-   3.2 [TJU-Ped-campus](#3.2)   
 4. [Benchmark](#4)  
    4.1 [TJU-DHD-traffic](#4.1)  
    4.2 [TJU-DHD-campus](#4.2)   
@@ -34,16 +31,19 @@ License plate (LP) detection in the wild remains challenging due to the diversit
 
 ## 1. Introduction <a name="1"></a>
 
-Object detection research has attracted great interest in recent years, with models being applied widely in many traffic-related applications. A variety of methods have demonstrated high accuracy in detecting license plates (LP) under controlled settings. While existing detectors successfully applied to the LP detection problem, many key challenges still remain in \textit{unconstrained wild scenarios}. For example, real-world LP detection causes the following problems: modifications of prior settings to adapt to wild, incorrect detection results, ambiguity in classifying objects associated with scene text, low-quality visual data, uneven lighting, motion blur, and others. However, such scenarios are becoming increasingly common and gaining significant popularity in a variety of applications, including civil security, crowd analytics, law enforcement, and street view images. Despite being the most common scenario, LP benchmarks still do not consider real-world cases, and therefore many problems are not adequately addressed. As a result, state-of-the-art detectors struggle with these images. we propose an end-to-end framework which is composed of a single shared feature encoder and two parallel detection branches. The single shared encoder learns a global feature across all detection tasks (LP and non-LP respectively). More specifically, due to non-LP objects (scene text but not LP), our framework is divided into 1) LP detection network and 2) non-LP detection network. Different from traditional LP detection models, we explicitly prevent learning of non-LP objects. To this end, we bring a novel \textit{information-theoretic loss} to minimize mutual information between the embedding feature and non-LP distribution that interferes with LP detection. We collect a new large-scale dataset, \textbf{LPST-110K}, containing images captured from unconstrained scenes. To the best of our knowledge, LPST-110K is the first dataset to address LP and scene text simultaneously for LP detection. By evaluating state-of-the-art detection models on LPST-110K, we demonstrate the accuracy improvement of our proposed model compared with other approaches (Sec. \rom{4}).
+Object detection research has attracted great interest in recent years, with models being applied widely in many traffic-related applications. A variety of methods have demonstrated high accuracy in detecting license plates (LP) under controlled settings. While existing detectors successfully applied to the LP detection problem, many key challenges still remain in \textit{unconstrained wild scenarios}. For example, real-world LP detection causes the following problems: modifications of prior settings to adapt to wild, incorrect detection results, ambiguity in classifying objects associated with scene text, low-quality visual data, uneven lighting, motion blur, and others. However, such scenarios are becoming increasingly common and gaining significant popularity in a variety of applications, including civil security, crowd analytics, law enforcement, and street view images. Despite being the most common scenario, LP benchmarks still do not consider real-world cases, and therefore many problems are not adequately addressed. As a result, state-of-the-art detectors struggle with these images. we propose an end-to-end framework which is composed of a single shared feature encoder and two parallel detection branches. The single shared encoder learns a global feature across all detection tasks (LP and non-LP respectively). More specifically, due to non-LP objects (scene text but not LP), our framework is divided into 1) LP detection network and 2) non-LP detection network. Different from traditional LP detection models, we explicitly prevent learning of non-LP objects. To this end, we bring a novel information-theoretic loss to minimize mutual information between the embedding feature and non-LP distribution that interferes with LP detection. We collect a new large-scale dataset, LPST-110K, containing images captured from unconstrained scenes. To the best of our knowledge, LPST-110K is the first dataset to address LP and scene text simultaneously for LP detection. By evaluating state-of-the-art detection models on LPST-110K, we demonstrate the accuracy improvement of our proposed model compared with other approaches.
 
-## 2. Object detection dataset <a name="2"></a>
+## 2. License Plate Detection Dataset <a name="2"></a>
 
-| name       | DHD-traffic (\#images) | DHD-traffic (\#instances) | DHD-campus (\#images) | DHD-campus (\#instances) |
+| name       | \#images               | \#instances               | \#LP instances/Image  | \#ST instances/Image     |
 | :--------- | :--------------------: | :-----------------------: | :-------------------: | :----------------------: |
-| training   |         45,266         |          239,980          |        39,727         |         267,445          |
-| validation |         5,000          |          30,679           |         5,204         |          41,620          |
-| test       |         10,000         |          60,963           |        10,157         |          68,643          |
-| total      |         60,266         |          331,622          |        55,088         |         377,708          |
+| AOLP       |         2,049          |          2,049            |        1              |         267,445          |
+| SSIG       |         2,000          |          8,683            |        4.34           |          41,620          |
+| PKU        |         3,977          |          4,389            |        1.10           |          68,643          |
+| UFPR       |         4,500          |          4,500            |        1              |         377,708          |
+| CD-HARD    |         102            |          102              |        1              |         377,708          |
+| CCPD       |         250K           |          250K             |        1              |         377,708          |
+| LPST-110K  |         9,795          |          110K             |        5.21           |         377,708          |
 
 #### 2.1 TJU-DHD-traffic <a name="2.1"></a>
 * training & validation set:
@@ -108,79 +108,6 @@ One should download all of them and open the `.zip.001` using your favorite zip 
   [cocoapi](https://github.com/cocodataset/cocoapi)
 
 
-## 3. Pedestrian detection dataset<a name="3"></a>
-
-| name       | Ped-traffic (\#images) | Ped-traffic (\#instances) | Ped-campus (\#images) | Ped-campus (\#instances) |
-| :--------- | :--------------------: | :-----------------------: | :-------------------: | :----------------------: |
-| training   |         13,858         |          27,650           |        39,727         |         234,455          |
-| validation |         2,136          |           5,244           |         5,204         |          36,161          |
-| test       |         4,344          |          10,724           |        10,157         |          59,007          |
-| total      |         20,338         |          43,618           |        55,088         |         329,623          |
-
-#### 3.1 TJU-Ped-traffic <a name="3.1"></a>
-(Note that the images are same as those in the TJU-DHD-traffic)
-* training & validation set:
-    * images:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/ERPTtJ9Qf3hHnKn9JQc9_y0B5uaq6qXjnF4U--2wiSTjRw?e=aarX3v)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1eLxfl19LVLy9k-DrqTOYvg)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_traffic_trainval_images.zip)
-    * annotations:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EZ35hrbp2PlBkim37i9BnecBKPTpYE92WjCD3GCnTDIXHA)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1wUdgtibmj16aKXvn57Cnfg)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_pedestrian_traffic_trainval_annos.zip)
-* test set:
-    * images:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EbkVOGVzsoRIhR6u73iAv44BN3n9geqp3R-eTJeZCJen-w?e=az00He)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1b1iR8eujY28qm-pH8rHV-A)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_traffic_test_images.zip)
-    * imageinfo:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EaqndNLmmcNOsgoHChviMiIB0eedPO6sgdZJBGPjURq2_Q?e=MEZNyD)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/14KaBUhWWio-KYf_1usMfhw)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_pedestrian_traffic_test_imageinfo.zip)
-* evaluation tools:
-  [Citypersons API](https://bitbucket.org/shanshanzhang/citypersons)
-
-#### 3.2 TJU-Ped-campus <a name="3.2"></a>
-(Note that the images are same as those in the TJU-DHD-campus)
-* training & validation set:
-    * training images-1:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EQOf_tTaDz9AtGBA7xXZdMYBmGgEN3wI6pYxdj_sqU9RaA?e=IAa4z4)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1aar9GAbityEBMMEnXEwbOA)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_train_images.zip.001)
-    * training images-2:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EYdb15b5s3hOm_2EWc_uLn8BtpzXnpZJLVRIH6HdbXfbVw?e=hHJNon)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1xWDiok5DTVT8HEMK09DPiA)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_train_images.zip.002)
-    * training images-3:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EatVjZJ4uJZGm3OOvdbjheMB6dIOlDumkbhVSMqNZFjSDQ?e=5a9C63)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1gUQs6XdUU7fczaydtLPBSg)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_train_images.zip.003)
-    * training images-4:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/ERJGIKSOjrVGodjyAtYWOBIBz7Yn3EGGjmtMRDpG9eFlHQ?e=x8MASb)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1PncIpCpS_En9Ka0aD6-_lA)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_train_images.zip.004)
-    * validation images:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EUHmv-SilRtPlKVuV7TTYlUB24CVeAi9HPto9ZJ6m61kpA?e=aREmy0)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1WgbIEXIbGHjh6jBjh_l37A)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_val_images.zip)
-    * annotations:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EfyEXYoJ41BErzFfILHIG9YByAgkl2eFd5qHyVrSuPK9AA?e=s5aalT)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/124YE4YjwfkB134NILNa-Dg)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_pedestrian_campus_trainval_annos.zip)
-* test set:
-    * images:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EZZe-4Atw8tEkPdTToNXEboBtdORbKqz2j6asah_hgUgAA?e=ABQibv)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1I33BMKvU9WP_nC64wM1hHw)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_campus_test_images.zip)
-    * imageinfo:
-      [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/EXaIKrEGScJNulDTzu9NG8kBk18S03yvfKlNR-bS9NPh1g?e=aUUFBJ)
-      / [BaiduNetDisk (code: biit)](https://pan.baidu.com/s/1zNyzTBCVgPZsWW1SbsmNKw)
-      / [backup](http://vi.tju.edu.cn/public/dhd_dataset/dhd_pedestrian_campus_test_imageinfo.zip)
-* evaluation tools:
-  [Citypersons API](https://bitbucket.org/shanshanzhang/citypersons)
-
-
-
 ## 4. Benchmark <a name="4"></a>
 
 #### 4.1 TJU-DHD-traffic <a name="4.1"></a>
@@ -221,22 +148,7 @@ One should download all of them and open the `.zip.001` using your favorite zip 
 
 ## 5. Citation <a name="5"></a>
 
-If this project help your research, please consider to cite our paper.
-```
-@article{Pang_DHD_TIP_2020,
-         author = {Yanwei Pang and Jiale Cao and Yazhao Li and Jin Xie and Hanqing Sun and Jinfeng Gong},
-         title = {TJU-DHD: A Diverse High-Resolution Dataset for Object Detection},
-         journal = {IEEE Transactions on Image Processing},
-         year = 2020
-        }
-
-@article{Cao_PDR_arXiv_2020,
-         author = {Jiale Cao and Yanwei Pang and Jin Xie and Fahad Shahbaz Khan and Ling Shao},
-         title = {From Handcrafted to Deep Features for Pedestrian Detection: A Survey},
-         journal = {arXiv:2010.00456},
-         year = 2020
-        }
-```
+If this project help your research, please consider to cite our github page.
 
 ## 6. Evaluation on the test set <a name="6"></a>
 
@@ -245,4 +157,4 @@ If you would like to evaluate your model on the test set, you can send us (conno
 
 ## 7. Contact <a name="7"></a>
 
-If you have any questions or want to add your results, please feel free to [contact us](https://github.com/vilabtju/dhd-dataset/issues).
+If you have any questions or want to add your results, please feel free to [contact us](brightyoun@gist.ac.kr).

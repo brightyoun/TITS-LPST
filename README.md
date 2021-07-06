@@ -14,7 +14,7 @@ This is the official website for "License Plate Detection via Information Maximi
 ## Table of Contents
 0. [Abstract](#0)
 1. [Introduction](#1)  
-2. [License Plate Detection Dataset](#2)  
+2. [License Plate Detection Benchmarks](#2)  
    2.1 [TJU-DHD-traffic](#2.1)  
    2.2 [TJU-DHD-campus](#2.2)   
 4. [Benchmark](#4)  
@@ -25,7 +25,7 @@ This is the official website for "License Plate Detection via Information Maximi
 6. [Evaluation on the test set](#6) 
 7. [Contact](#7) 
 
-## Abstract
+## Abstract <a name="0"></a>
 License plate (LP) detection in the wild remains challenging due to the diversity of environmental conditions.  Nevertheless,  prior solutions have focused on controlled environments,  such as when  LP  images frequently emerge as from an approximately frontal viewpoint and without scene text which might be mistaken for an LP. However, even for state-of-the-art object detectors, their detection performance is not satisfactory for real-world environments, suffering from various types of degradation. To solve these problems, we propose a novel end-to-end framework for robust LP detection, designed for such challenging settings. Our contribution is threefold:  (1) A novel information-theoretic learning that takes advantage of a shared encoder, an LP detector and a scene text detector (excluding LP) simultaneously; (2) Localization refinement for generalizing the bounding box regression network to complement ambiguous detection results; (3) a large-scale, comprehensive dataset, LPST-110K, representing real-world unconstrained scenes including scene text annotations. Computational tests show that the proposed model outperforms other state-of-the-art methods on a variety of challenging datasets.License plate (LP) detection in the wild remains challenging due to the diversity of environmental conditions.  Nevertheless,  prior solutions have focused on controlled environments,  such as when  LP  images frequently emerge as from an approximately frontal viewpoint and without scene text which might be mistaken for an LP. However, even for state-of-the-art object detectors, their detection performance is not satisfactory for real-world environments, suffering from various types of degradation. To solve these problems, we propose a novel end-to-end framework for robust LP detection, designed for such challenging settings. Our contribution is threefold:  (1) A novel information-theoretic learning that takes advantage of a shared encoder, an LP detector and a scene text detector (excluding LP) simultaneously; (2) Localization refinement for generalizing the bounding box regression network to complement ambiguous detection results; (3) a large-scale, comprehensive dataset, LPST-110K, representing real-world unconstrained scenes including scene text annotations. Computational tests show that the proposed model outperforms other state-of-the-art methods on a variety of challenging datasets.
 
 
@@ -33,19 +33,19 @@ License plate (LP) detection in the wild remains challenging due to the diversit
 
 Object detection research has attracted great interest in recent years, with models being applied widely in many traffic-related applications. A variety of methods have demonstrated high accuracy in detecting license plates (LP) under controlled settings. While existing detectors successfully applied to the LP detection problem, many key challenges still remain in \textit{unconstrained wild scenarios}. For example, real-world LP detection causes the following problems: modifications of prior settings to adapt to wild, incorrect detection results, ambiguity in classifying objects associated with scene text, low-quality visual data, uneven lighting, motion blur, and others. However, such scenarios are becoming increasingly common and gaining significant popularity in a variety of applications, including civil security, crowd analytics, law enforcement, and street view images. Despite being the most common scenario, LP benchmarks still do not consider real-world cases, and therefore many problems are not adequately addressed. As a result, state-of-the-art detectors struggle with these images. we propose an end-to-end framework which is composed of a single shared feature encoder and two parallel detection branches. The single shared encoder learns a global feature across all detection tasks (LP and non-LP respectively). More specifically, due to non-LP objects (scene text but not LP), our framework is divided into 1) LP detection network and 2) non-LP detection network. Different from traditional LP detection models, we explicitly prevent learning of non-LP objects. To this end, we bring a novel information-theoretic loss to minimize mutual information between the embedding feature and non-LP distribution that interferes with LP detection. We collect a new large-scale dataset, LPST-110K, containing images captured from unconstrained scenes. To the best of our knowledge, LPST-110K is the first dataset to address LP and scene text simultaneously for LP detection. By evaluating state-of-the-art detection models on LPST-110K, we demonstrate the accuracy improvement of our proposed model compared with other approaches.
 
-## 2. License Plate Detection Dataset <a name="2"></a>
+## 2. License Plate Detection Benchmarks <a name="2"></a>
 
-| name       | \#images               | \#instances               | \#LP instances/Image  | \#ST instances/Image     |
-| :--------- | :--------------------: | :-----------------------: | :-------------------: | :----------------------: |
-| AOLP       |         2,049          |          2,049            |        1              |         267,445          |
-| SSIG       |         2,000          |          8,683            |        4.34           |          41,620          |
-| PKU        |         3,977          |          4,389            |        1.10           |          68,643          |
-| UFPR       |         4,500          |          4,500            |        1              |         377,708          |
-| CD-HARD    |         102            |          102              |        1              |         377,708          |
-| CCPD       |         250K           |          250K             |        1              |         377,708          |
-| \#LPST-110K  |         9,795          |          110K             |        5.21           |         377,708          |
-
-#### 2.1 TJU-DHD-traffic <a name="2.1"></a>
+| name       | \#images               | \#instances               | \#LP instances/Image  | \#ST instances/Image     | \#Variations in tilt degrees. |
+| :--------- | :--------------------: | :-----------------------: | :-------------------: | :----------------------: | :---------------------------: |
+| AOLP       |         2,049          |          2,049            |        1              |         1                |                   ✓           |
+| SSIG       |         2,000          |          8,683            |        4.34           |         4.34             | ✗ |
+| PKU        |         3,977          |          4,389            |        1.10           |         1.10             | ✗ |
+| UFPR       |         4,500          |          4,500            |        1              |         1                | ✗ | 
+| CD-HARD    |         102            |          102              |        1              |         1                | ✓ | 
+| CCPD       |         250K           |          250K             |        1              |         1                | ✓ |
+| **LPST-110K  |         9,795        |          110K             |        **5.21         |         **11             | ✓ |
+ 
+#### 2.1 LPST-110K <a name="2.1"></a>
 * training & validation set:
     * images:
       [OneDrive](https://tjueducn-my.sharepoint.com/:u:/g/personal/hqsun_tju_edu_cn/ERPTtJ9Qf3hHnKn9JQc9_y0B5uaq6qXjnF4U--2wiSTjRw?e=aarX3v)

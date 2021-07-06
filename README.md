@@ -24,6 +24,7 @@ This is the official website for "License Plate Detection via Information Maximi
    3.3 [UFPR Dataset](#3.3)  
    3.4 [CCPD Dataset](#3.4)  
    3.5 [LTSP-110K Dataset](#3.5) 
+4. [Comparisons](#4)  
 5. [Citation](#5)  
 6. [Evaluation on the test set](#6) 
 7. [Contact](#7) 
@@ -177,7 +178,7 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
 
 * LP Detection Results on validation (AP)
 
-  | method               | AP       | $$AP^{.75}$$       |
+  | method               | AP       | AP75     |
   | :------------------- | :------: | :------: | 
   | Faster R-CNN         | .781     | .578     | 
   | SSD300               | .740     | .639     |
@@ -186,6 +187,25 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   | + IF loss            | .905     | .885     |
   | + GRL                | .906     | .890     |
   | + LRM (**Ours**)     | **.911** | **.915** |
+
+* non-LP Detection Results on validation (Precision, Recall)
+
+  | method               | Precision | Recall   |
+  | :------------------- | :-------: | :------: | 
+  | Faster R-CNN         | 31.1      | 33.8     | 
+  | SSD300               | 29.8      | 29.2     |
+  | YOLO9000             | 30.5      | 23.9     |
+  | RetinaNet (Baseline) | 37.3      | 32.1     |
+  | + IF loss            | **19.1**  | 21.1     |
+  | + GRL                | 21.5      | 21.0     |
+  | + LRM (**Ours**)     | 20.2      | **15.3** |
+
+## 4. Qualitative Results <a name="4"></a>
+
+#### 4.1 Ablation Study <a name="3.1"></a>
+
+* Results on AOLP
+
 
 ## 5. Citation <a name="5"></a>
 

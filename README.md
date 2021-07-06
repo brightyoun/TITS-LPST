@@ -177,7 +177,7 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
 
 * LP Detection Results on validation (AP)
 
-  | method               | AP       | AP^{.75}       |
+  | method               | AP       | $$AP^{.75}$$       |
   | :------------------- | :------: | :------: | 
   | Faster R-CNN         | .781     | .578     | 
   | SSD300               | .740     | .639     |

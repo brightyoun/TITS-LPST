@@ -26,6 +26,8 @@ This is the official website for "License Plate Detection via Information Maximi
    3.4 [CCPD Dataset](#3.4)  
    3.5 [LTSP-110K Dataset](#3.5) 
 4. [Comparisons](#4)  
+   4.1 [Ablation Study](#4.1)
+   4.2 [Comparisons with SOTA](#4.2)
 5. [Citation](#5)  
 6. [Evaluation on the test set](#6) 
 7. [Contact](#7) 
@@ -203,11 +205,12 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
 
 ## 4. Qualitative Results <a name="4"></a>
 
-#### 4.1 Ablation Study <a name="3.1"></a>
+#### 4.1 Ablation Study <a name="4.1"></a>
 
 * Ablation Study
 ![Examples of DHD](imgs/tits-006.jpg)
 
+#### 4.2 Comparisons with SOTA <a name="4.2"></a>
 * Results on Various Benchmarks
 ![Examples of DHD](imgs/eccv20_fig05.png)
 

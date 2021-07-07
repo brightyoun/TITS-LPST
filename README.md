@@ -44,12 +44,12 @@ Object detection research has attracted great interest in recent years, with mod
 
 | name       | \#images               | \#instances               | \#LP instances/Image  | \#ST instances/Image     | \#Variations in tilt degrees. | \#Variations in distance. |  \#Variations in blur. |
 | :--------- | :--------------------: | :-----------------------: | :-------------------: | :----------------------: | :---------------------------: | :---------------------------: | :---------------------------: |
-| AOLP (T-VT, 2013)       |         2,049          |          2,049            |        1              |         1                | ✓ | ✗ | ✓ |
-| SSIG (JEI, 2016)      |         2,000          |          8,683            |        4.34           |         4.34             | ✗ | ✓ | ✗ |
-| PKU (T-IP, 2016)       |         3,977          |          4,389            |        1.10           |         1.10             | ✗ | ✗ | ✗ |
-| UFPR (Arxiv, 2018)      |         4,500          |          4,500            |        1              |         1                | ✗ | ✓ | ✓ |
-| CD-HARD (ECCV, 2018)   |         102            |          102              |        1              |         1                | ✓ | ✓ | ✗ |
-| CCPD (ECCV, 2018))      |         250K           |          250K             |        1              |         1                | ✓ | ✓ | ✓ |
+| [AOLP (T-VT, 2013)](https://ieeexplore.ieee.org/abstract/document/6339122/)        |         2,049          |          2,049            |        1              |         1                | ✓ | ✗ | ✓ |
+| [SSIG (JEI, 2016)](https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-25/issue-5/053034/Benchmark-for-license-plate-character-segmentation/10.1117/1.JEI.25.5.053034.short?SSO=1)      |         2,000          |          8,683            |        4.34           |         4.34             | ✗ | ✓ | ✗ |
+| [PKU (T-IP, 2016)](https://ieeexplore.ieee.org/abstract/document/7752971/)       |         3,977          |          4,389            |        1.10           |         1.10             | ✗ | ✗ | ✗ |
+| [UFPR (IJCNN, 2018)](https://ieeexplore.ieee.org/abstract/document/8489629)      |         4,500          |          4,500            |        1              |         1                | ✗ | ✓ | ✓ |
+| [CD-HARD (ECCV, 2018)](https://openaccess.thecvf.com/content_ECCV_2018/html/Sergio_Silva_License_Plate_Detection_ECCV_2018_paper.html)   |         102            |          102              |        1              |         1                | ✓ | ✓ | ✗ |
+| [CCPD (ECCV, 2018))](https://openaccess.thecvf.com/content_ECCV_2018/html/Zhenbo_Xu_Towards_End-to-End_License_ECCV_2018_paper.html)      |         250K           |          250K             |        1              |         1                | ✓ | ✓ | ✓ |
 | **LPST-110K (Ours)**  |         9,795        |          110K             |        **5.21**         |         **11**       | ✓ | ✓ | ✓ |
  
 ### Annotations format

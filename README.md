@@ -123,13 +123,13 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   | method       | AC Precision | AC Recall | LE Precision | LE Recall | RP Precision | RP Recall  |
   | :----------- | :----------: | :-------: | :----------: | :-------: | :----------: | :--------: |
   | [Hsu et al. (T-VT, 2013)](https://ieeexplore.ieee.org/abstract/document/6339122/)         | 91.00        |  96.00    | 91.00        |  95.00    |  91.00       | 94.00      |
-  | Li (Arxiv, 2016)          | 98.53        |  98.38    | 97.75        |  97.62    |  95.28       | 95.58      |
-  | Selmi (ICDAR, 2017))       | 92.60        |  96.80    | 93.50        |  93.30    |  92.90       | 96.20      |
-  | Rafique (SC, 2018)     | -            |  98.09    | -            |  93.92    |  -           | 89.03      |
-  | Xie (T-ITS, 2018)         | 99.51        |  99.51    | 99.43        |  **99.43**    |  99.46       | 99.46      |
-  | Li (T-ITS, 2018)          | -            |  99.12    | -            |  99.08    |  -           | 98.20      |
-  | Bjorklund (PR, 2019)   | **100**          |  99.30    | **99.80**        |  99.00    |  **99.80**       | **99.00**      |
-  | Selmi (PRL, 2020)       | 99.30        |  99.40    | 99.20        |  99.20    |  98.90       | 98.80      |
+  | [Li et al. (Arxiv, 2016)](https://arxiv.org/abs/1601.05610)          | 98.53        |  98.38    | 97.75        |  97.62    |  95.28       | 95.58      |
+  | [Selmi et al. (ICDAR, 2017)](https://ieeexplore.ieee.org/abstract/document/8270118)       | 92.60        |  96.80    | 93.50        |  93.30    |  92.90       | 96.20      |
+  | [Rafique et al. (Soft Computing, 2018)](https://link.springer.com/article/10.1007/s00500-017-2696-2) | - |  98.09    | -            |  93.92    |  -           | 89.03      |
+  | [Xie et al. (T-ITS, 2018)](https://ieeexplore.ieee.org/abstract/document/8253610)    | 99.51        |  99.51    | 99.43        |  **99.43**    |  99.46       | 99.46      |
+  | [Li et al. (T-ITS, 2018)](https://ieeexplore.ieee.org/abstract/document/8424450)         | -            |  99.12    | -            |  99.08    |  -           | 98.20      |
+  | [Bjorklund et al. (PR, 2019)](https://www.sciencedirect.com/science/article/pii/S0031320319301475)  | **100**  |  99.30  | **99.80** | 99.00 |  **99.80**  | **99.00**      |
+  | [Selmi et al. (PRL, 2020)](https://www.sciencedirect.com/science/article/pii/S0167865519303216) | 99.30  |  99.40  | 99.20   |  99.20    |  98.90       | 98.80      |
   | **Ours**     | **99.71**        |  **99.80**    | **99.80**        |  **99.32**    |  **99.71**       | **98.79**      |
   
 
@@ -140,14 +140,14 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   | method                 | G1        | G2        |  G3       | G4        | G5        | Average   |
   | :--------------------- | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
   | RetinaNet (Baseline)   | 96.67     | 97.29     | 96.77     | 96.68     | 95.34     | 96.34     |
-  | Zheng (PRL, 2005)                 | 94.93     | 95.71     | 91.91     | 69.58     | 67.61     | 79.47     |
-  | Zhao (ITSC, 2011)                  | 95.18     | 95.71     | 95.13     | 69.93     | 68.10     | 80.29     |
-  | Zhou (T-IP, 2012)                  | 95.43     | 97.85     | 94.21     | 81.21     | 82.37     | 90.22     |
-  | Li (T-ITS, 2013)                    | 98.89     | 98.42     | 95.83     | 81.17     | 83.31     | 91.52     |
-  | Yuan (T-IP, 2016)                  | 98.76     | 98.42     | 97.72     | 96.23     | 97.32     | 97.69     |
-  | Li (T-ITS, 2018)                    | **99.88** | **99.86** | 99.60     | **100.0** | 99.31     | 99.73     |
-  | Bjorklund (PR, 2019)             | 98.77     | 99.00     | 98.92     | 97.74     | -         | 98.61     |
-  | Selmi (PRL, 2020)                 | 99.50     | 99.40     | 99.40     | 99.60     | 99.10     | 99.40     |
+  | [Zheng et al. (PRL, 2005)](https://www.sciencedirect.com/science/article/pii/S0167865519303216)  | 94.93     | 95.71     | 91.91     | 69.58     | 67.61     | 79.47     |
+  | [Zhao et al. (ITSC, 2011)](https://ieeexplore.ieee.org/abstract/document/6082854/)                  | 95.18     | 95.71     | 95.13     | 69.93     | 68.10     | 80.29     |
+  | [Zhou et al. (T-IP, 2012)](https://ieeexplore.ieee.org/abstract/document/6200342)                  | 95.43     | 97.85     | 94.21     | 81.21     | 82.37     | 90.22     |
+  | [Li et al. (T-ITS, 2013)](https://ieeexplore.ieee.org/abstract/document/6547735)                   | 98.89     | 98.42     | 95.83     | 81.17     | 83.31     | 91.52     |
+  | [Yuan et al. (T-IP, 2016)](https://ieeexplore.ieee.org/abstract/document/7752971)                 | 98.76     | 98.42     | 97.72     | 96.23     | 97.32     | 97.69     |
+  | [Li et al. (T-ITS, 2018)](https://ieeexplore.ieee.org/abstract/document/8424450)                   | **99.88** | **99.86** | 99.60     | **100.0** | 99.31     | 99.73     |
+  | [Bjorklund et al. (PR, 2019)](https://www.sciencedirect.com/science/article/pii/S0031320319301475) | 98.77     | 99.00     | 98.92     | 97.74     | -         | 98.61     |
+  | [Selmi et al. (PRL, 2020)](https://www.sciencedirect.com/science/article/pii/S0167865519303216)    | 99.50     | 99.40     | 99.40     | 99.60     | 99.10     | 99.40     |
   | **Ours**               | **99.88** | **99.86** | **99.87** | 99.65     | **99.58** | **99.74** |
   
 
@@ -158,8 +158,8 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   | method               | UFPR  |
   | :------------------- | :---: | 
   | RetinaNet (Baseline) | 97.22 | 
-  | Laroca (Arxiv, 2018)              | 98.33 | 
-  | Laroca (Arxiv, 2019) | 98.67 | 
+  | [Laroca et al. (IJCNN, 2018)](https://ieeexplore.ieee.org/abstract/document/8489629)             | 98.33 | 
+  | [Laroca et al. (Arxiv, 2019)](https://arxiv.org/abs/1909.01754) | 98.67 | 
   | **Ours** | **99.17** | 
 
 #### 3.4 CCPD Dataset <a name="3.4"></a>
@@ -172,9 +172,9 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   | Faster R-CNN         | 92.90 | 
   | SSD300               | 94.40 |  
   | YOLO9000             | 93.10 |  
-  | Wang (T-IFS, 2007)                | 47.20 |  
-  | Li (T-ITS, 2018)                  | 94.20 |  
-  | Xu (ECCV, 2018)                  | 94.50 | 
+  | [Wang et al. (T-IFS, 2007)](https://ieeexplore.ieee.org/abstract/document/4202577/)                | 47.20 |  
+  | [Li et al. (T-ITS, 2018)](https://ieeexplore.ieee.org/abstract/document/8424450)                  | 94.20 |  
+  | [Xu et al. (ECCV, 2018)](https://openaccess.thecvf.com/content_ECCV_2018/html/Zhenbo_Xu_Towards_End-to-End_License_ECCV_2018_paper.html)   | 94.50 | 
   | **Ours**             | **96.10** | 
 
 #### 3.5 LTSP-110K Dataset <a name="3.5"></a>

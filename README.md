@@ -122,7 +122,7 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   |              | :AOLP         |           |              |           |              |           : |
   | method       | AC Precision | AC Recall | LE Precision | LE Recall | RP Precision | RP Recall  |
   | :----------- | :----------: | :-------: | :----------: | :-------: | :----------: | :--------: |
-  | Hsu (T-VT, 2013)         | 91.00        |  96.00    | 91.00        |  95.00    |  91.00       | 94.00      |
+  | [Hsu et al. (T-VT, 2013)](https://ieeexplore.ieee.org/abstract/document/6339122/)         | 91.00        |  96.00    | 91.00        |  95.00    |  91.00       | 94.00      |
   | Li (Arxiv, 2016)          | 98.53        |  98.38    | 97.75        |  97.62    |  95.28       | 95.58      |
   | Selmi (ICDAR, 2017))       | 92.60        |  96.80    | 93.50        |  93.30    |  92.90       | 96.20      |
   | Rafique (SC, 2018)     | -            |  98.09    | -            |  93.92    |  -           | 89.03      |

@@ -158,8 +158,8 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   | method               | UFPR  |
   | :------------------- | :---: | 
   | RetinaNet (Baseline) | 97.22 | 
-  | Laroca               | 98.33 | 
-  | Laroca | 98.67 | 
+  | Laroca (Arxiv, 2018)              | 98.33 | 
+  | Laroca (Arxiv, 2019) | 98.67 | 
   | **Ours** | **99.17** | 
 
 #### 3.4 CCPD Dataset <a name="3.4"></a>
@@ -172,9 +172,9 @@ To see full dataset, here's the Email and request Dataset [contact us](brightyou
   | Faster R-CNN         | 92.90 | 
   | SSD300               | 94.40 |  
   | YOLO9000             | 93.10 |  
-  | Wang                 | 47.20 |  
-  | Li                   | 94.20 |  
-  | Xu                   | 94.50 | 
+  | Wang (T-IFS, 2007)                | 47.20 |  
+  | Li (T-ITS, 2018)                  | 94.20 |  
+  | Xu (ECCV, 2018)                  | 94.50 | 
   | **Ours**             | **96.10** | 
 
 #### 3.5 LTSP-110K Dataset <a name="3.5"></a>

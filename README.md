@@ -44,13 +44,13 @@ Object detection research has attracted great interest in recent years, with mod
 
 | name       | \#images               | \#instances               | \#LP instances/Image  | \#ST instances/Image     | \#Variations in tilt degrees. | \#Variations in distance. |  \#Variations in blur. |
 | :--------- | :--------------------: | :-----------------------: | :-------------------: | :----------------------: | :---------------------------: | :---------------------------: | :---------------------------: |
-| AOLP       |         2,049          |          2,049            |        1              |         1                | ✓ | ✗ | ✓ |
-| SSIG       |         2,000          |          8,683            |        4.34           |         4.34             | ✗ | ✓ | ✗ |
-| PKU        |         3,977          |          4,389            |        1.10           |         1.10             | ✗ | ✗ | ✗ |
-| UFPR       |         4,500          |          4,500            |        1              |         1                | ✗ | ✓ | ✓ |
-| CD-HARD    |         102            |          102              |        1              |         1                | ✓ | ✓ | ✗ |
-| CCPD       |         250K           |          250K             |        1              |         1                | ✓ | ✓ | ✓ |
-| **LPST-110K**  |         9,795        |          110K             |        **5.21**         |         **11**       | ✓ | ✓ | ✓ |
+| AOLP (T-VT, 2013)       |         2,049          |          2,049            |        1              |         1                | ✓ | ✗ | ✓ |
+| SSIG (JEI, 2016)      |         2,000          |          8,683            |        4.34           |         4.34             | ✗ | ✓ | ✗ |
+| PKU (T-IP, 2016)       |         3,977          |          4,389            |        1.10           |         1.10             | ✗ | ✗ | ✗ |
+| UFPR (Arxiv, 2018)      |         4,500          |          4,500            |        1              |         1                | ✗ | ✓ | ✓ |
+| CD-HARD (ECCV, 2018)   |         102            |          102              |        1              |         1                | ✓ | ✓ | ✗ |
+| CCPD (ECCV, 2018))      |         250K           |          250K             |        1              |         1                | ✓ | ✓ | ✓ |
+| **LPST-110K (Ours)**  |         9,795        |          110K             |        **5.21**         |         **11**       | ✓ | ✓ | ✓ |
  
 ### Annotations format
 The CSV file with annotations should contain one annotation per line.

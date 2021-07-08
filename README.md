@@ -228,7 +228,7 @@ If this project help your research, please consider to cite our github page.
 ## 6. Evaluation on the test set <a name="6"></a>
 
 Ablation studies can be conducted on the validation set.
-If you would like to evaluate your model on the test set, you can send us (connor#tju.edu.cn, replace `#` with `@`) your detection results in the `json` format.
+If you would like to evaluate your model on the test set, you can send us (brightyoun@gist.ac.kr) your detection results in the `json` format.
 
 ## 7. Contact <a name="7"></a>
 
